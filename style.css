@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(135deg ,#153677, #4e085f);
+}
+
+.conatiner{
+    width: 100%;
+    min-width: 100vh;
+    background: linear-gradient(135deg ,#153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px ;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png) ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png) ;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+
+/* ICON PANNEL */
+
+
+.wrapper {
+    margin-top: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 180px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background:#1da1f2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+    background:  #123b59;
+}
+.wrapper .button:nth-child(3):hover .icon {
+    background: #e65887;
+}
+.wrapper .button:nth-child(4):hover .icon {
+    background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #1da1f2;
+}
+.wrapper .button:nth-child(2) span {
+    color: #426782;
+}
+.wrapper .button:nth-child(3) span {
+    color: #e05181;
+}
+.wrapper .button:nth-child(4) span {
+    color: #333;
+}
+.wrapper .button:nth-child(5) span {
+    color: #ff0000;
+}
